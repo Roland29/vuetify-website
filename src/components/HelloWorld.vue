@@ -1,76 +1,112 @@
 <template>
   <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img
-        contain
-        height="300"
-        src="@/assets/logo.svg"
-      />
-
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
-
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
-
-      <div class="py-14" />
-
-      <v-row class="d-flex align-center justify-center">
-        <v-col cols="auto">
-          <v-btn
-            href="https://next.vuetifyjs.com/components/all/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-view-dashboard"
-              size="large"
-              start
-            />
-
-            Components
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            href="https://next.vuetifyjs.com/introduction/why-vuetify/#feature-guides"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
-
-            Get Started
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            href="https://community.vuetifyjs.com/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
-
-            Community
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-responsive>
+    <v-row>
+      <v-col class="fill-height">
+        <v-card>
+          <v-card-title>Horaires de consultation</v-card-title>
+          <v-card-text>
+            <v-row>
+              <v-col>
+                Lundi
+              </v-col>
+              <v-col>
+                9h à 12h
+              </v-col>
+              <v-col>
+                13h à 18h
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                Mardi
+              </v-col>
+              <v-col>
+                9h à 12h
+              </v-col>
+              <v-col>
+                13h30 à 18h30
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                Jeudi
+              </v-col>
+              <v-col>
+                9h à 12h
+              </v-col>
+              <v-col>
+                13h30 à 17h30
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                Vendredi
+              </v-col>
+              <v-col>
+                9h à 12h
+              </v-col>
+              <v-col>
+                13h à 18h
+              </v-col>
+            </v-row>
+        </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col class="fill-height">
+        <v-card>
+          <v-card-title>Prendre rendez-vous</v-card-title>
+          <v-card-text>
+              Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi de 16h30 à 18h30. N'hésitez pas à nous laisser un email ou un message avec votre nom ainsi que le motif de votre appel au:
+          </v-card-text>
+          <v-card-actions >
+            <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
+              <v-icon left>mdi-phone</v-icon>
+              02 98 02 23 19
+            </v-btn>
+            <v-spacer></v-spacer>
+            <v-btn variant="outlined" color="primary" dark href="mailto:secretaria.abasq.paire@gmail.com">
+              <v-icon left>mdi-email</v-icon>
+              Envoyer un mail
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-btn variant="outlined">
+        Prendre RDV en ligne avec le docteur PAIRE
+      </v-btn>
+      <v-btn variant="outlined">
+        Prendre un RDV en ligne avec le Docteur Abasq
+      </v-btn>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>Adresse</v-card-title>
+          <v-card-text>
+            <v-container>
+              <v-row>
+                 50 rue Raymond Leaustic
+              </v-row>
+              <v-row>
+                29200 Brest
+              </v-row>
+            </v-container>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col>
+        <v-card>
+          <v-card-title>Omnipratique et Parodontie</v-card-title>
+          <v-card-text>
+            <v-container>
+                La parodontie traite les malmadies des gencives et du parodonte. Elles sont plus connues sous le nom de déchaussement des dents et conduisent à la perte des dents.
+            </v-container>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
