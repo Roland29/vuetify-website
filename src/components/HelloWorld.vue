@@ -1,58 +1,52 @@
 <template>
-  <v-container class="fill-height">
+  <v-container>
     <v-row>
-      <v-col class="fill-height">
+      <v-col>
         <v-card>
-          <v-card-title>Horaires de consultation</v-card-title>
+          <v-card-title center>Horaires de consultation</v-card-title>
           <v-card-text>
-            <v-row>
-              <v-col>
-                Lundi
-              </v-col>
-              <v-col>
-                9h à 12h
-              </v-col>
-              <v-col>
-                13h à 18h
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                Mardi
-              </v-col>
-              <v-col>
-                9h à 12h
-              </v-col>
-              <v-col>
-                13h30 à 18h30
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                Jeudi
-              </v-col>
-              <v-col>
-                9h à 12h
-              </v-col>
-              <v-col>
-                13h30 à 17h30
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                Vendredi
-              </v-col>
-              <v-col>
-                9h à 12h
-              </v-col>
-              <v-col>
-                13h à 18h
-              </v-col>
-            </v-row>
+            <v-list>
+              <v-list-item>
+                  <v-list-item-title>
+                    <v-row>
+                      <v-col>Lundi</v-col>
+                      <v-col>9h à 12h</v-col>
+                      <v-col>13h à 18h</v-col>
+                    </v-row>
+                  </v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col>Mardi</v-col>
+                    <v-col>9h à 12h</v-col>
+                    <v-col>13h à 18h</v-col>
+                  </v-row>
+                </v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col>Jeudi</v-col>
+                    <v-col>9h à 12h</v-col>
+                    <v-col>13h à 18h</v-col>
+                  </v-row>
+                </v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-row>
+                    <v-col>Vendredi</v-col>
+                    <v-col>9h à 12h</v-col>
+                    <v-col>13h à 18h</v-col>
+                  </v-row>
+                </v-list-item-title>
+              </v-list-item>
+            </v-list>
         </v-card-text>
         </v-card>
       </v-col>
-      <v-col class="fill-height">
+      <v-col>
         <v-card>
           <v-card-title>Prendre rendez-vous</v-card-title>
           <v-card-text>
@@ -60,8 +54,8 @@
           </v-card-text>
           <v-card-actions >
             <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
-              <v-icon left>mdi-phone</v-icon>
-              02 98 02 23 19
+              <v-icon left>mdi-phone-classic</v-icon>
+               02 98 02 23 19
             </v-btn>
             <v-spacer></v-spacer>
             <v-btn variant="outlined" color="primary" dark href="mailto:secretaria.abasq.paire@gmail.com">
@@ -73,27 +67,32 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-btn variant="outlined">
-        Prendre RDV en ligne avec le docteur PAIRE
-      </v-btn>
-      <v-btn variant="outlined">
-        Prendre un RDV en ligne avec le Docteur Abasq
-      </v-btn>
+      <v-col>
+        <v-btn color="primary" variant="outlined">
+          <v-icon left>mdi-calendar-clock</v-icon>
+          Prendre RDV avec le Dr PAIRE
+        </v-btn>
+      </v-col>
+      <v-col>
+        <v-btn color="primary" variant="outlined">
+          <v-icon left>mdi-calendar-clock</v-icon>
+          Prendre un RDV avec le Dr Abasq
+        </v-btn>
+      </v-col>
     </v-row>
     <v-row>
       <v-col>
         <v-card>
           <v-card-title>Adresse</v-card-title>
           <v-card-text>
-            <v-container>
-              <v-row>
-                 50 rue Raymond Leaustic
-              </v-row>
-              <v-row>
-                29200 Brest
-              </v-row>
-            </v-container>
+                 50 rue Raymond Leaustic<br>29200 Brest
           </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8">
+              <v-icon left>mdi-google-maps</v-icon>
+              Direction
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
       <v-col>
@@ -111,5 +110,5 @@
 </template>
 
 <script lang="ts" setup>
-  //
+
 </script>
