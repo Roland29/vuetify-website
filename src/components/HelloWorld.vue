@@ -64,8 +64,8 @@
         <v-card>
           <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
           <v-card-text>
-            Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi de 16h30 à 18h30. N'hésitez pas à nous laisser
-            un email ou un message avec votre nom ainsi que le motif de votre appel au:
+            Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi de 16h30 à 18h30.<br>N'hésitez pas à nous laisser
+            un email ou un message avec votre nom ainsi que le motif de votre appel
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
@@ -74,7 +74,8 @@
             </v-btn>
             <v-btn variant="outlined" color="primary" dark href="mailto:secretaria.abasq.paire@gmail.com">
               <v-icon left>mdi-email</v-icon>
-              Envoyer un mail
+              <p v-if="isDesktop">Envoyer un mail</p>
+              <p v-else>Envoyer mail</p>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -82,11 +83,13 @@
           <v-card-actions class="justify-space-around">
             <v-btn color="primary" variant="tonal">
               <v-icon left>mdi-calendar-clock</v-icon>
-              Prendre RDV avec le Dr PAIRE
+                <p v-if="isDesktop">Prendre RDV avec le Dr PAIRE</p>
+                <p v-else>RDV Dr PAIRE</p>
             </v-btn>
             <v-btn color="primary" variant="tonal">
               <v-icon left>mdi-calendar-clock</v-icon>
-              Prendre un RDV avec le Dr Abasq
+              <p v-if="isDesktop">Prendre un RDV avec le Dr Abasq</p>
+              <p v-else>RDV Dr Abasq</p>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -129,7 +132,22 @@
 </template>
 
 <script lang="ts" setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
+const isDesktop = ref(false);
+
+function checkScreenSize() {
+  isDesktop.value = window.innerWidth >= 600; // set breakpoint here
+}
+
+onMounted(() => {
+  checkScreenSize();
+  window.addEventListener('resize', checkScreenSize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkScreenSize);
+});
 </script>
 
 <style scoped>
