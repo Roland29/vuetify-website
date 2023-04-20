@@ -15,9 +15,3 @@
 <script lang="ts" setup>
   //
 </script>
-<style>
-.v-app-bar-title__title {
-  flex: 1;
-  text-align: center;
-}
-</style>

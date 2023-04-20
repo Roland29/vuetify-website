@@ -2,8 +2,7 @@
   <v-app>
     <default-bar />
 
-    <default-view class="hero"/>
-
+    <default-view/>
   </v-app>
 </template>
 
@@ -11,11 +10,3 @@
   import DefaultBar from './AppBar.vue'
   import DefaultView from './View.vue'
 </script>
-
-<style scoped>
-.hero {
-  background: url('../../assets/cabinet.jpg');
-  background-size: cover;
-  height: 100vh;
-}
-</style>
