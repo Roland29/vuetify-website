@@ -6,7 +6,7 @@
       ></v-img>
     </template>
     <v-app-bar-title class="text-center">
-      <v-icon left>mdi-tooth</v-icon>
+      <v-icon left>mdi-tooth-outline</v-icon>
         Cabinet Dentaire<br>Dr Abasq et Dr Paire
     </v-app-bar-title>
   </v-app-bar>
