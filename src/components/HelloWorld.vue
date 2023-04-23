@@ -126,9 +126,6 @@
       </v-col>
     </v-row>
   </v-container>
-  <v-footer class="justify-center hero font-weight-light">
-    <a href="mailto:secretaria.abasq.paire@gmail.com">secretaria.abasq.paire@gmail.com</a>
-  </v-footer>
 </template>
 
 <script lang="ts" setup>
@@ -149,10 +146,3 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', checkScreenSize);
 });
 </script>
-
-<style scoped>
-.hero {
-  background: linear-gradient(#13547acc, #80d0c7cc);
-  background-size: cover;
-}
-</style>
