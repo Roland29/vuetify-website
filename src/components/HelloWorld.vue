@@ -118,7 +118,7 @@
           <v-card-title class="text-center">Omnipratique et Parodontie</v-card-title>
           <v-card-text>
             <v-container>
-              La parodontie traite les malmadies des gencives et du parodonte. Elles sont plus connues sous le nom de
+              La parodontie traite les maladies des gencives et du parodonte. Elles sont plus connues sous le nom de
               déchaussement des dents et conduisent à la perte des dents.
             </v-container>
           </v-card-text>
