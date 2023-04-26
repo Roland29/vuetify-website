@@ -64,7 +64,7 @@
         <v-card>
           <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
           <v-card-text class="text-body-1">
-            Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi matin.<br><br>N'hésitez pas à nous laisser
+            <br>Le secrétariat est ouvert le lundi, mardi, jeudi et vendredi matin.<br><br>N'hésitez pas à nous laisser
             un email ou un message avec votre nom ainsi que le motif de votre appel.
           </v-card-text>
           <v-card-actions class="justify-space-around">
@@ -72,7 +72,7 @@
               <v-icon left>mdi-phone-classic</v-icon>
               02 98 02 23 19
             </v-btn>
-            <v-btn variant="outlined" color="primary" dark href="mailto:secretaria.abasq.paire@gmail.com">
+            <v-btn variant="outlined" color="primary" dark href="mailto:secretariat.abasq.paire@gmail.com">
               <v-icon left>mdi-email</v-icon>
               <p v-if="isDesktop">Envoyer un mail</p>
               <p v-else>Envoyer mail</p>
@@ -103,8 +103,12 @@
             Adresse
           </v-card-title>
           <v-card-text>
-            50 rue Raymond Leaustic<br>29200 Brest<br><br>
-            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6">7 rampe du vieux bourg</a> (zone bleue) face au Carefour express.<br>Le cabinet se situe à l'étage.
+            <v-img
+              src="../assets/address.png"
+              height="150px"
+            ></v-img>
+            <br>50 rue Raymond Leaustic<br>29200 Brest<br><br>
+            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6">7 rampe du vieux bourg</a> (zone bleue) face au Carrefour express.<br>Le cabinet se situe à l'étage.
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8">

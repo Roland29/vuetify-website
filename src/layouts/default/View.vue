@@ -3,7 +3,7 @@
     <router-view />
   </v-main>
   <v-footer class="justify-center hero2 font-weight-light">
-    <a href="mailto:secretaria.abasq.paire@gmail.com">secretaria.abasq.paire@gmail.com</a>
+    <a href="mailto:secretariat.abasq.paire@gmail.com">secretariat.abasq.paire@gmail.com</a>
   </v-footer>
 </template>
 
