@@ -102,7 +102,7 @@
             <v-icon left>mdi-home</v-icon>
             Adresse
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <v-img
               src="../assets/address.png"
               height="150px"
@@ -121,10 +121,11 @@
       <v-col>
         <v-card>
           <v-card-title class="text-center">Omnipratique et Parodontie</v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <v-container>
-              La parodontie traite les maladies des gencives et du parodonte. Elles sont plus connues sous le nom de
-              déchaussement des dents et conduisent à la perte des dents.
+              Notre cabinet dentaire s'attache à préserver la santé bucco-dentaire, à rétablir ou améliorer le sourrire.<br><br>
+              Il s'oriente vers le traitement des maladies parondotales.<br> <span class="text-body-2">(Les maladies des gencives et du parodonte. Elles sont plus connues sous le nom de
+              déchaussement des dents et conduisent à la perte des dents.)</span>
             </v-container>
           </v-card-text>
         </v-card>
