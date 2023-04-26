@@ -63,7 +63,7 @@
       <v-col>
         <v-card>
           <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
-          <v-card-text>
+          <v-card-text class="text-subtitle-1">
             Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi matin.<br>N'hésitez pas à nous laisser
             un email ou un message avec votre nom ainsi que le motif de votre appel.
           </v-card-text>
