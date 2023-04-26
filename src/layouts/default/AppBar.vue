@@ -7,8 +7,8 @@
     </template>
     <v-app-bar-title class="text-center">
       <v-icon left>mdi-tooth-outline</v-icon>
-        <span v-if="isDesktop">Cabinet Dentaire Dr Abasq et Dr Paire<br>Chirurgiens Dentistes - Omnipratique et Parodontie</span>
-        <span v-else>Cabinet Dentaire<br>Dr Abasq et Dr Paire</span>
+        <span v-if="isDesktop">Cabinet Dentaire Dr Catherine Abasq et Dr David Paire<br>Chirurgiens Dentistes - Omnipratique et Parodontie</span>
+        <span v-else>Cabinet Dentaire<br>Dr Catherine Abasq et Dr David Paire</span>
     </v-app-bar-title>
   </v-app-bar>
 </template>
