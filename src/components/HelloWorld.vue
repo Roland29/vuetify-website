@@ -64,8 +64,8 @@
         <v-card>
           <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
           <v-card-text>
-            Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi de 16h30 à 18h30.<br>N'hésitez pas à nous laisser
-            un email ou un message avec votre nom ainsi que le motif de votre appel
+            Le secrétariat est ouvert les lundi, mardi, jeudi et vendredi matin.<br>N'hésitez pas à nous laisser
+            un email ou un message avec votre nom ainsi que le motif de votre appel.
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
@@ -79,20 +79,20 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-        <v-card>
-          <v-card-actions class="justify-space-around">
-            <v-btn color="primary" variant="tonal">
-              <v-icon left>mdi-calendar-clock</v-icon>
-                <p v-if="isDesktop">Prendre RDV avec le Dr PAIRE</p>
-                <p v-else>RDV Dr PAIRE</p>
-            </v-btn>
-            <v-btn color="primary" variant="tonal">
-              <v-icon left>mdi-calendar-clock</v-icon>
-              <p v-if="isDesktop">Prendre un RDV avec le Dr Abasq</p>
-              <p v-else>RDV Dr Abasq</p>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+<!--        <v-card>-->
+<!--          <v-card-actions class="justify-space-around">-->
+<!--            <v-btn color="primary" variant="tonal">-->
+<!--              <v-icon left>mdi-calendar-clock</v-icon>-->
+<!--                <p v-if="isDesktop">Prendre RDV avec le Dr PAIRE</p>-->
+<!--                <p v-else>RDV Dr PAIRE</p>-->
+<!--            </v-btn>-->
+<!--            <v-btn color="primary" variant="tonal">-->
+<!--              <v-icon left>mdi-calendar-clock</v-icon>-->
+<!--              <p v-if="isDesktop">Prendre un RDV avec le Dr Abasq</p>-->
+<!--              <p v-else>RDV Dr Abasq</p>-->
+<!--            </v-btn>-->
+<!--          </v-card-actions>-->
+<!--        </v-card>-->
       </v-col>
     </v-row>
     <v-row>
@@ -103,7 +103,8 @@
             Adresse
           </v-card-title>
           <v-card-text>
-            50 rue Raymond Leaustic<br>29200 Brest
+            50 rue Raymond Leaustic<br>29200 Brest<br><br>
+            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6">7 rampe du vieux bourg</a> (zone bleue) face au Carefour express.<br>Le cabinet se situe à l'étage.
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8">
