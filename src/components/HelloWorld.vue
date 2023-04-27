@@ -4,12 +4,11 @@
       <v-col>
         <v-card variant="tonal">
           <v-card-item>
-            <v-img
-              src="../assets/cabinet.jpg"
-              max-height="450"
-              cover
-              class="bg-grey-lighten-2"
-            ></v-img>
+            <v-img src="../assets/cabinet.jpg" max-height="450" cover class="bg-grey-lighten-2" aspect-ratio="16/9" alt="cabinet">
+              <template #sources>
+                <source srcset="../assets/cabinet.webp">
+              </template>
+            </v-img>
           </v-card-item>
         </v-card>
       </v-col>
@@ -103,10 +102,11 @@
             Adresse
           </v-card-title>
           <v-card-text class="text-body-1">
-            <v-img
-              src="../assets/address.png"
-              height="150px"
-            ></v-img>
+            <v-img src="../assets/address.png" height="150px" alt="address">
+              <template #sources>
+                <source srcset="../assets/address.webp">
+              </template>
+            </v-img>
             <br>50 rue Raymond Leaustic<br>29200 Brest<br><br>
             Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6" target="_blank">7 rampe du vieux bourg</a> (zone bleue) face au Carrefour express.<br>Le cabinet se situe à l'étage.
           </v-card-text>

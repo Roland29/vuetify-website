@@ -13,7 +13,7 @@
 
 <style scoped>
 .hero {
-  background: url('../../assets/cabinetBlur1.jpg');
+  background: url('../../assets/cabinetBlur.jpg');
   background-size: cover;
 }
  .hero2 {
