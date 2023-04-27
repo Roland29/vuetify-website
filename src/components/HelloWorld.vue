@@ -108,10 +108,10 @@
               height="150px"
             ></v-img>
             <br>50 rue Raymond Leaustic<br>29200 Brest<br><br>
-            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6">7 rampe du vieux bourg</a> (zone bleue) face au Carrefour express.<br>Le cabinet se situe à l'étage.
+            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6" target="_blank">7 rampe du vieux bourg</a> (zone bleue) face au Carrefour express.<br>Le cabinet se situe à l'étage.
           </v-card-text>
           <v-card-actions class="justify-space-around">
-            <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8">
+            <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8" target="_blank">
               <v-icon color="#F44336" left>mdi-google-maps</v-icon>
               Direction
             </v-btn>
