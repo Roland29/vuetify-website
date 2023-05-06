@@ -4,9 +4,16 @@
       <v-col>
         <v-card variant="tonal">
           <v-card-item>
-            <v-img src="../assets/cabinet.jpg" max-height="450" cover class="bg-grey-lighten-2" aspect-ratio="16/9" alt="cabinet">
+            <v-img
+              src="../assets/cabinet.jpg"
+              max-height="450"
+              cover
+              class="bg-grey-lighten-2"
+              aspect-ratio="16/9"
+              alt="cabinet"
+            >
               <template #sources>
-                <source srcset="../assets/cabinet.webp">
+                <source srcset="../assets/cabinet.webp" />
               </template>
             </v-img>
           </v-card-item>
@@ -63,8 +70,8 @@
         <v-card>
           <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
           <v-card-text class="text-body-1">
-            <br>Le secrétariat est ouvert le lundi, mardi, jeudi et vendredi matin.<br><br>N'hésitez pas à nous laisser
-            un email ou un message avec votre nom ainsi que le motif de votre appel.
+            <br />Le secrétariat est ouvert le lundi, mardi, jeudi et vendredi matin.<br /><br />N'hésitez pas à nous
+            laisser un email ou un message avec votre nom ainsi que le motif de votre appel.
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
@@ -78,20 +85,20 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-<!--        <v-card>-->
-<!--          <v-card-actions class="justify-space-around">-->
-<!--            <v-btn color="primary" variant="tonal">-->
-<!--              <v-icon left>mdi-calendar-clock</v-icon>-->
-<!--                <p v-if="isDesktop">Prendre RDV avec le Dr PAIRE</p>-->
-<!--                <p v-else>RDV Dr PAIRE</p>-->
-<!--            </v-btn>-->
-<!--            <v-btn color="primary" variant="tonal">-->
-<!--              <v-icon left>mdi-calendar-clock</v-icon>-->
-<!--              <p v-if="isDesktop">Prendre un RDV avec le Dr Abasq</p>-->
-<!--              <p v-else>RDV Dr Abasq</p>-->
-<!--            </v-btn>-->
-<!--          </v-card-actions>-->
-<!--        </v-card>-->
+        <!--        <v-card>-->
+        <!--          <v-card-actions class="justify-space-around">-->
+        <!--            <v-btn color="primary" variant="tonal">-->
+        <!--              <v-icon left>mdi-calendar-clock</v-icon>-->
+        <!--                <p v-if="isDesktop">Prendre RDV avec le Dr PAIRE</p>-->
+        <!--                <p v-else>RDV Dr PAIRE</p>-->
+        <!--            </v-btn>-->
+        <!--            <v-btn color="primary" variant="tonal">-->
+        <!--              <v-icon left>mdi-calendar-clock</v-icon>-->
+        <!--              <p v-if="isDesktop">Prendre un RDV avec le Dr Abasq</p>-->
+        <!--              <p v-else>RDV Dr Abasq</p>-->
+        <!--            </v-btn>-->
+        <!--          </v-card-actions>-->
+        <!--        </v-card>-->
       </v-col>
     </v-row>
     <v-row>
@@ -104,11 +111,13 @@
           <v-card-text class="text-body-1">
             <v-img src="../assets/address.png" height="150px" alt="address">
               <template #sources>
-                <source srcset="../assets/address.webp">
+                <source srcset="../assets/address.webp" />
               </template>
             </v-img>
-            <br>50 rue Raymond Leaustic<br>29200 Brest<br><br>
-            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6" target="_blank">7 rampe du vieux bourg</a> (zone bleue) face au Carrefour express.<br>Le cabinet se situe à l'étage.
+            <br />50 rue Raymond Leaustic<br />29200 Brest<br /><br />
+            Afin de faciliter votre venue, nous vous conseillons de vous garer sur le parking
+            <a href="https://goo.gl/maps/sFA67nRbY9yWNBmb6" target="_blank">7 rampe du vieux bourg</a>
+            (zone bleue) face au Carrefour express.<br />Le cabinet se situe à l'étage.
           </v-card-text>
           <v-card-actions class="justify-space-around">
             <v-btn color="primary" variant="outlined" href="https://goo.gl/maps/XDhjnNX1RpbE22pc8" target="_blank">
@@ -123,9 +132,13 @@
           <v-card-title class="text-center">Omnipratique et Parodontie</v-card-title>
           <v-card-text class="text-body-1">
             <v-container>
-              Notre cabinet dentaire s'attache à préserver la santé bucco-dentaire, à rétablir ou améliorer le sourrire.<br><br>
-              Il s'oriente vers le traitement des maladies parondotales.<br> <span class="text-body-2">(Les maladies des gencives et du parodonte. Elles sont plus connues sous le nom de
-              déchaussement des dents et conduisent à la perte des dents.)</span>
+              Notre cabinet dentaire s'attache à préserver la santé bucco-dentaire, à rétablir ou améliorer le
+              sourrire.<br /><br />
+              Il s'oriente vers le traitement des maladies parondotales.<br />
+              <span class="text-body-2"
+                >(Les maladies des gencives et du parodonte. Elles sont plus connues sous le nom de déchaussement des
+                dents et conduisent à la perte des dents.)</span
+              >
             </v-container>
           </v-card-text>
         </v-card>

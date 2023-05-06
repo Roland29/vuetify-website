@@ -1,14 +1,15 @@
 <template>
   <v-app-bar color="teal-darken-4">
     <template v-slot:image>
-      <v-img
-        gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
-      ></v-img>
+      <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
     </template>
     <v-app-bar-title class="text-center">
       <v-icon left>mdi-tooth-outline</v-icon>
-        <span v-if="isDesktop">Cabinet Dentaire Dr Catherine Abasq et Dr David Paire<br>Chirurgiens Dentistes - Omnipratique et Parodontie</span>
-        <span v-else>Cabinet Dentaire<br>Dr Catherine Abasq et Dr David Paire</span>
+      <span v-if="isDesktop"
+        >Cabinet Dentaire Dr Catherine Abasq et Dr David Paire<br />Chirurgiens Dentistes - Omnipratique et
+        Parodontie</span
+      >
+      <span v-else>Cabinet Dentaire<br />Dr Catherine Abasq et Dr David Paire</span>
     </v-app-bar-title>
   </v-app-bar>
 </template>
