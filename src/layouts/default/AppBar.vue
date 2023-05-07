@@ -5,30 +5,12 @@
     </template>
     <v-app-bar-title class="text-center">
       <v-icon left>mdi-tooth-outline</v-icon>
-      <span v-if="isDesktop"
-        >Cabinet Dentaire Dr Catherine Abasq et Dr David Paire<br />Chirurgiens Dentistes - Omnipratique et
-        Parodontie</span
-      >
-      <span v-else>Cabinet Dentaire<br />Dr Catherine Abasq et Dr David Paire</span>
+      <p class="d-none d-sm-inline">
+        Cabinet Dentaire Dr Catherine Abasq et Dr David Paire<br />Chirurgiens Dentistes - Omnipratique et Parodontie
+      </p>
+      <p class="d-inline d-sm-none">Cabinet Dentaire<br />Dr Catherine Abasq et Dr David Paire</p>
     </v-app-bar-title>
   </v-app-bar>
 </template>
 
-<script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-
-const isDesktop = ref(false);
-
-function checkScreenSize() {
-  isDesktop.value = window.innerWidth >= 600; // set breakpoint here
-}
-
-onMounted(() => {
-  checkScreenSize();
-  window.addEventListener('resize', checkScreenSize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', checkScreenSize);
-});
-</script>
+<script lang="ts" setup></script>
