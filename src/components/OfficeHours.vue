@@ -1,53 +1,83 @@
-<script setup lang='ts'>
-
-</script>
-
 <template>
   <v-card>
     <v-card-title class="text-center">Horaires de consultation</v-card-title>
     <v-card-text>
       <v-list>
-        <v-list-item>
-          <v-list-item-title>
-            <v-row>
-              <v-col>Lundi</v-col>
-              <v-col>9h à 12h</v-col>
-              <v-col>13h à 18h</v-col>
-            </v-row>
-          </v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>
-            <v-row>
-              <v-col>Mardi</v-col>
-              <v-col>9h à 12h</v-col>
-              <v-col>13h30 à 18h30</v-col>
-            </v-row>
-          </v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>
-            <v-row>
-              <v-col>Jeudi</v-col>
-              <v-col>9h à 12h</v-col>
-              <v-col>13h30 à 17h30</v-col>
-            </v-row>
-          </v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>
-            <v-row>
-              <v-col>Vendredi</v-col>
-              <v-col>9h à 12h</v-col>
-              <v-col>13h à 18h</v-col>
-            </v-row>
-          </v-list-item-title>
+        <v-list-item v-for="(value, key, index) in businessHours" :key="index">
+          <v-row>
+            <v-col>{{ DayOfWeek[parseInt(key)] }}</v-col>
+            <v-col>{{ formatBusinessHours(value, true) }}</v-col>
+            <v-col>{{ formatBusinessHours(value, false) }}</v-col>
+          </v-row>
         </v-list-item>
       </v-list>
     </v-card-text>
   </v-card>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+enum DayOfWeek {
+  Sunday = 0,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+}
+interface IHours {
+  morningOpen: string;
+  morningClose: string;
+  afternoonOpen: string;
+  afternoonClose: string;
+}
 
-</style>
+type BusinessHours = {
+  [key in DayOfWeek]?: IHours;
+};
+
+const businessHours = ref<BusinessHours>({
+  [DayOfWeek.Monday]: {
+    morningOpen: '9h',
+    morningClose: '12h',
+    afternoonOpen: '13h',
+    afternoonClose: '18h',
+  },
+  [DayOfWeek.Tuesday]: {
+    morningOpen: '9h',
+    morningClose: '12h',
+    afternoonOpen: '13h30',
+    afternoonClose: '18h30',
+  },
+  [DayOfWeek.Thursday]: {
+    morningOpen: '9h',
+    morningClose: '12h',
+    afternoonOpen: '13h30',
+    afternoonClose: '17h30',
+  },
+  [DayOfWeek.Friday]: {
+    morningOpen: '9h',
+    morningClose: '12h',
+    afternoonOpen: '13h',
+    afternoonClose: '18h',
+  },
+});
+
+function formatBusinessHours(hours: IHours, isMorning: boolean): string {
+  const { morningOpen, morningClose, afternoonOpen, afternoonClose } = hours;
+
+  if (isMorning && morningOpen !== 'closed' && morningClose !== 'closed') {
+    return `${morningOpen} à ${morningClose}`;
+  }
+
+  if (afternoonOpen !== 'closed' && afternoonClose !== 'closed') {
+    return `${afternoonOpen} à ${afternoonClose}`;
+  }
+
+  return 'closed';
+}
+onMounted(() => console.log(businessHours.value));
+</script>
+
+<style scoped></style>
