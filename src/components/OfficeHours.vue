@@ -8,9 +8,9 @@
       <v-table density="compact" hover class="custom-table">
         <tbody>
           <tr v-for="(value, key, index) in businessHours" :key="index">
-            <td>{{ DayOfWeek[parseInt(key)] }}</td>
-            <td>{{ formatBusinessHours(value, true) }}</td>
-            <td>{{ formatBusinessHours(value, false) }}</td>
+            <td>{{ DayOfWeek[key] }}</td>
+            <td>{{ value && formatBusinessHours(value, true) }}</td>
+            <td>{{ value && formatBusinessHours(value, false) }}</td>
           </tr>
         </tbody>
       </v-table>
@@ -21,13 +21,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 enum DayOfWeek {
-  Dimanche = 0,
-  Lundi,
-  Mardi,
-  Mercredi,
-  Jeudi,
-  Vendredi,
-  Samedi,
+  Dimanche = 'Dimanche',
+  Lundi = 'Lundi',
+  Mardi = 'Mardi',
+  Mercredi = 'Mercredi',
+  Jeudi = 'Jeudi',
+  Vendredi = 'Vendredi',
+  Samedi = 'Samedi',
 }
 interface IHours {
   morningOpen: string;
