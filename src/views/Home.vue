@@ -4,11 +4,11 @@
       <v-col> <OfficePresentation /> </v-col>
     </v-row>
     <v-row>
-      <v-col> <OfficeHours /> </v-col>
-      <v-col> <BookAppointment /> </v-col>
+      <v-col> <OfficeHours id="hours" /> </v-col>
+      <v-col> <BookAppointment id="book" /> </v-col>
     </v-row>
     <v-row>
-      <v-col> <Location /></v-col>
+      <v-col> <Location id="location" /></v-col>
       <v-col> <Specialities /> </v-col>
     </v-row>
   </v-container>

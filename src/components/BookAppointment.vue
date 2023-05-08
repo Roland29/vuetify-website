@@ -2,7 +2,10 @@
 
 <template>
   <v-card>
-    <v-card-title class="text-center">Prendre rendez-vous</v-card-title>
+    <v-card-title class="text-center">
+      <v-icon left>mdi-card-account-phone</v-icon>
+      Prendre rendez-vous
+    </v-card-title>
     <v-card-text class="text-body-1">
       <br />Le secrétariat est ouvert le lundi, mardi, jeudi et vendredi matin.<br /><br />N'hésitez pas à nous laisser
       un email ou un message avec votre nom ainsi que le motif de votre appel.

@@ -1,6 +1,9 @@
 <template>
   <v-card>
-    <v-card-title class="text-center">Horaires de consultation</v-card-title>
+    <v-card-title class="text-center">
+      <v-icon left>mdi-store-clock</v-icon>
+      Horaires de consultation
+    </v-card-title>
     <v-card-text>
       <v-table density="compact" hover class="custom-table">
         <tbody>
@@ -16,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 enum DayOfWeek {
   Dimanche = 0,
   Lundi,
@@ -77,7 +80,6 @@ function formatBusinessHours(hours: IHours, isMorning: boolean): string {
 
   return 'closed';
 }
-onMounted(() => console.log(businessHours.value));
 </script>
 
 <style scoped>

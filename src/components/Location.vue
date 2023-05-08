@@ -3,7 +3,7 @@
 <template>
   <v-card>
     <v-card-title class="text-center">
-      <v-icon left>mdi-home</v-icon>
+      <v-icon left>mdi-store-marker</v-icon>
       Adresse
     </v-card-title>
     <v-card-text class="text-body-1">
