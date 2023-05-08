@@ -10,15 +10,28 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [18.x]
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
+      - name: Build application
+        run: npm run build --if-present
+
       - name: Run tests
-        run: npm run test
+        run: npm run test:unit
 
       - name: Upload coverage report
         uses: codecov/codecov-action@v2.1.0
