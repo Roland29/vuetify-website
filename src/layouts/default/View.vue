@@ -8,18 +8,18 @@
 </template>
 
 <script lang="ts" setup>
-  //
+//
 </script>
 
 <style scoped>
-  .hero {
-    background-size: cover;
-    background-image: url('../../assets/cabinetBlur.jpg');
+.hero {
+  background-size: cover;
+  background-image: url('../../assets/cabinetBlur.jpg');
   /*// image-set for FF, only jpg gets downloaded for not supporting browsers*/
-    background-image: -webkit-image-set(url('../../assets/cabinetBlur.webp') 1x);
-  }
- .hero2 {
-   background: linear-gradient(#13547acc, #80d0c7cc);
-   background-size: cover;
- }
+  background-image: -webkit-image-set(url('../../assets/cabinetBlur.webp') 1x);
+}
+.hero2 {
+  background: linear-gradient(#13547acc, #80d0c7cc);
+  background-size: cover;
+}
 </style>
