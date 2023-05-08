@@ -5,7 +5,7 @@
     </v-row>
     <v-row>
       <v-col> <OfficeHours id="hours" /> </v-col>
-      <!--      <v-col> <BookAppointment id="book" /> </v-col>-->
+      <v-col> <BookAppointment id="book" /> </v-col>
     </v-row>
     <v-row>
       <v-col> <Location id="location" /></v-col>
