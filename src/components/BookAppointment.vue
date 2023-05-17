@@ -7,8 +7,8 @@
       Prendre rendez-vous
     </v-card-title>
     <v-card-text class="text-body-1">
-      <br />Le secrétariat est ouvert le lundi, mardi, jeudi et vendredi matin.<br /><br />N'hésitez pas à nous laisser
-      un email ou un message avec votre nom ainsi que le motif de votre appel.
+      <br />Le secrétariat est ouvert lundi, mardi, jeudi et vendredi matin.<br /><br />N'hésitez pas à nous laisser un
+      email ou un message avec votre nom ainsi que le motif de votre appel.
     </v-card-text>
     <v-card-actions class="justify-space-around">
       <v-btn variant="outlined" color="primary" dark href="tel:0298022319">
